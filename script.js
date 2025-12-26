@@ -14,6 +14,7 @@ function addBookToLibrary(title, author, numberOfPages, read) {
     myLibrary.push(book);
 }
 
+// Add book to page
 const tableBody = document.querySelector('tbody');
 
 function addBookToPage(myLibrary) {
@@ -54,3 +55,8 @@ function addBookToPage(myLibrary) {
 
 addBookToLibrary('1984', 'George Orwell', 328, 'Yes');
 addBookToPage(myLibrary);
+
+// addBookButton customization
+const dialog = document.getElementById('add-book-dialog');
+
+const showDialog = (show) => show ? dialog.showModal() : dialog.close();
