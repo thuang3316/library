@@ -2,6 +2,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 20px;
     background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
     font-family: 'Inter', sans-serif;
 }
@@ -22,4 +23,17 @@ body {
     transform: scale(1.05);
     background-color: rgb(105, 152, 240);
     cursor: pointer;
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid black;
+    width: max(50%, 700px);
+}
+
+th,
+td {
+    padding: 10px 20px;
+    border: 1px solid black;
+    font-size: 20px;
 }
