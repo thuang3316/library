@@ -33,6 +33,15 @@ function addBookToPage(book) {
                     readButton.classList.add('readButton', 'unread');
                     readButton.textContent = 'not read';
                 }
+                readButton.addEventListener('click', () => {
+                    if (readButton.classList.contains('read')) {
+                        readButton.classList.replace('read', 'unread');
+                        readButton.textContent = 'not read';
+                    } else {
+                        readButton.classList.replace('unread', 'read');
+                        readButton.textContent = 'read';
+                    }
+                }) 
                 tableItem.appendChild(readButton);
             } else {
                 tableItem.textContent = book[key];
@@ -84,4 +93,3 @@ form.addEventListener('submit', (e) => {
 
     form.reset();
 });
-

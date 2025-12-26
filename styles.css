@@ -38,3 +38,32 @@ td {
     font-size: 20px;
     text-align: center;
 }
+
+/* readButton removeButton */
+.readButton, .removeButton {
+    border: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    padding: 4px 20px;
+    border-radius: 15px;
+}
+
+.readButton.read {
+    background-color: greenyellow;
+    color: black;
+}
+
+.readButton.unread {
+    background-color: rgb(197, 47, 47);
+    color: white;
+}
+
+.readButton:hover, .removeButton:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.removeButton {
+    background-color: rgb(34, 31, 31);
+    color: white;
+}
